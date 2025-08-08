@@ -1,0 +1,51 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </radialGradient>
+    <linearGradient id="pinkPetalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF69B4"/>
+      <stop offset="100%" stop-color="#FF1493"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wavy threads -->
+  <path d="M 0,110 Q 20,90 40,110 T 80,110" stroke="#FF69B4" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 220,110 Q 200,130 180,110 T 140,110" stroke="#FF69B4" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Petals -->
+  <g transform="translate(110,110)">
+    <circle r="50" fill="#FFDAB9"/>
+    <g>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(0) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(45) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(90) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(135) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(180) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(225) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(270) translate(0,-50)"/>
+      <ellipse rx="10" ry="25" fill="url(#pinkPetalGrad)" transform="rotate(315) translate(0,-50)"/>
+    </g>
+  </g>
+
+  <!-- Decorative outer ring -->
+  <circle cx="110" cy="110" r="50" fill="none" stroke="#DAA520" stroke-width="4" stroke-dasharray="4,4" />
+
+  <!-- Middle ring -->
+  <circle cx="110" cy="110" r="30" fill="#FF4500" stroke="#FFD700" stroke-width="3"/>
+
+  <!-- Center circle -->
+  <circle cx="110" cy="110" r="15" fill="url(#centerGrad)" stroke="#B22222" stroke-width="2"/>
+
+  <!-- Little decorative dots around -->
+  <circle cx="110" cy="60" r="4" fill="#32CD32"/>
+  <circle cx="110" cy="160" r="4" fill="#32CD32"/>
+  <circle cx="60" cy="110" r="4" fill="#32CD32"/>
+  <circle cx="160" cy="110" r="4" fill="#32CD32"/>
+  <circle cx="80" cy="80" r="4" fill="#FF69B4"/>
+  <circle cx="140" cy="80" r="4" fill="#FF69B4"/>
+  <circle cx="80" cy="140" r="4" fill="#FF69B4"/>
+  <circle cx="140" cy="140" r="4" fill="#FF69B4"/>
+</svg>
